@@ -1,0 +1,68 @@
+﻿@page "/studentOverview"
+@inherits StudentOverviewBase
+
+<h1 class="page-title">Students Search</h1>
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-3">
+            <label for="firstName"> First Name </label>
+            <input type="search" name="firstName" value="firstName" class="form-control col-sm-8" />
+        </div>
+        <div class="col-3">
+            <label for="lastName"> Last Name </label>
+            <input type="search" name="lastName" value="lastName" class="form-control col-sm-8" />
+        </div>
+        <div class="col-3 dropdown">
+            <label for="class"> Class </label>
+            <select id="class" class="form-control col-sm-8">
+                <option value="LKG">LKG</option>
+                <option value="UKG">UKG</option>
+                <option value="FIRST">FIRST</option>
+                <option value="SECOND">SECOND</option>
+            </select>
+        </div>
+        <div class="col-3" style="padding-top:30px">
+            <button type="submit" class="btn btn-primary form-control col-sm-8">Search</button>
+        </div>
+    </div>
+    <hr class="my-4">
+    <table class="table">
+        <thead>
+            <tr>
+                @*<th></th>*@
+                <th>Student ID</th>
+                <th>First name</th>
+                <th>Surname</th>
+                <th>MobileNumber</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Students)
+            {
+                <tr>
+                    @*  <td><img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{student.StudentId}-small.jpg")" class="rounded-circle" /></td> profile pic *@
+                    <td>@student.StudentId</td>
+                    <td>@student.FirstName</td>
+                    <td>@student.SurName</td>
+                    <td>@student.ParentalDetails.ContactNumber</td>
+                    <td>
+                        <a href="@($"studentdetail/{student.StudentId}")" class="btn btn-primary table-btn">
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                        <a href="@($"studentedit/{student.StudentId}")" class="btn btn-primary table-btn">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+
+
+
+    
+

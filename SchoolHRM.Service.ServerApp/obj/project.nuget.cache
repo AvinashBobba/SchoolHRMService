@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "phOsScydSBIPG92g1j6QKnBG2sbLcU+5nqvMIAX/Zpn7z1JXtHq8SlkO2/syMQMHKZUZ90slpikRW1rxDYt8eQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\avinash.bobba\\source\\repos\\school-service-web-app\\SchoolHRM.Service.ServerApp\\SchoolHRM.Service.ServerApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.0.0\\microsoft.aspnetcore.authorization.3.0.0.nupkg.sha512",
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\microsoft.aspnetcore.components\\3.0.0\\microsoft.aspnetcore.components.3.0.0.nupkg.sha512",
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.0.0\\microsoft.aspnetcore.components.analyzers.3.0.0.nupkg.sha512",
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\3.0.0\\microsoft.aspnetcore.components.forms.3.0.0.nupkg.sha512",
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\microsoft.aspnetcore.components.web\\3.0.0\\microsoft.aspnetcore.components.web.3.0.0.nupkg.sha512",
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\microsoft.aspnetcore.metadata\\3.0.0\\microsoft.aspnetcore.metadata.3.0.0.nupkg.sha512",
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.0.0\\microsoft.extensions.dependencyinjection.3.0.0.nupkg.sha512",
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.0\\microsoft.extensions.logging.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\microsoft.jsinterop\\3.0.0\\microsoft.jsinterop.3.0.0.nupkg.sha512",
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,5 @@
+C:\Users\avinash.bobba\source\repos\school-service-web-app\SchoolHRM.Service.Shared\bin\Debug\netstandard2.0\SchoolHRM.Service.Shared.deps.json
+C:\Users\avinash.bobba\source\repos\school-service-web-app\SchoolHRM.Service.Shared\bin\Debug\netstandard2.0\SchoolHRM.Service.Shared.dll
+C:\Users\avinash.bobba\source\repos\school-service-web-app\SchoolHRM.Service.Shared\obj\Debug\netstandard2.0\SchoolHRM.Service.Shared.csprojAssemblyReference.cache
+C:\Users\avinash.bobba\source\repos\school-service-web-app\SchoolHRM.Service.Shared\obj\Debug\netstandard2.0\SchoolHRM.Service.Shared.AssemblyInfoInputs.cache
+C:\Users\avinash.bobba\source\repos\school-service-web-app\SchoolHRM.Service.Shared\obj\Debug\netstandard2.0\SchoolHRM.Service.Shared.AssemblyInfo.cs

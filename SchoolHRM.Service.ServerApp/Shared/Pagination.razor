@@ -1,0 +1,86 @@
+﻿<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        @foreach (var link in linkModels)
+        {
+            <li @onclick ="@(() => SelectedPageInternal(link))" 
+                style="cursor:pointer;"
+                class="page-item @(link.Enabled ? null : "disabled") @(link.Active ? "active" :null)">
+                <span class="page-link" href="#">@link.Text</span>
+            </li>
+        }
+    </ul>
+</nav>
+
+@code {
+    [Parameter] public int PageNumber { get; set; } = 1;
+    [Parameter] public int PageCount { get; set; }
+    [Parameter] public int Radius { get; set; } = 3;
+    [Parameter] public EventCallback<int> SelectedPage { get; set; }
+    List<LinkModel> linkModels;
+
+    protected override void OnParametersSet()
+    {
+        LoadPages();
+    }
+
+    private async Task SelectedPageInternal(LinkModel link)
+    {
+        if(link.Page == PageNumber)
+        {
+            return;
+        }
+        if(!link.Enabled)
+        {
+            return;
+        }
+        PageNumber = link.Page;
+        await SelectedPage.InvokeAsync(link.Page);
+    }
+
+    private void LoadPages()
+    {
+        linkModels = new List<LinkModel>();
+        var isPreviousPageLinkEnabled = PageNumber != 1;
+        var previousPage = PageNumber - 1;
+        linkModels.Add(new LinkModel(previousPage, isPreviousPageLinkEnabled, "Previous"));
+
+        for (int i = 1; i < PageCount; i++)
+        {
+            if(i >= PageNumber - Radius && i <= PageNumber + Radius)
+            {
+                linkModels.Add(new LinkModel(i) { Active = PageNumber == i });
+            }
+        }
+        var isNextPageLinkEnabled = PageNumber != PageCount;
+        var nextPage = PageNumber + 1;
+        linkModels.Add(new LinkModel(nextPage, isNextPageLinkEnabled, "Next"));
+    }
+
+    class LinkModel
+    {
+        public LinkModel(int page)
+            : this(page, true) { }
+
+
+        public LinkModel(int page, bool enabled)
+            : this(page, enabled, page.ToString())
+        {
+
+        }
+
+        public LinkModel(int page, bool enabled, string text)
+        {
+            Page = page;
+            Enabled = enabled;
+            Text = text;
+        }
+
+        public string Text { get; set; }
+
+        public int Page { get; set; }
+
+        public bool Enabled { get; set; } = true;
+
+        public bool Active { get; set; } = false;
+    }
+}

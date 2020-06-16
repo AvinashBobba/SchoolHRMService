@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "oSYM4owqvPEGShzp3JxuMNx81bRf8iH/h/rZ4j33BJPF6pyljirlfLFB1miSCW5hUH8tisMrjLbQ57ZWFFGgZQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\avinash.bobba\\source\\repos\\school-service-web-app\\SchoolHRM.Service.Shared\\SchoolHRM.Service.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\avinash.bobba\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

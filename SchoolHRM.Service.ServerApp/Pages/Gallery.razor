@@ -1,0 +1,16 @@
+﻿@page "/gallery"
+
+@inherits GalleryBase
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="images/profilePicture.jpg" alt="Avatar" style="width:300px;height:200px;">
+        </div>
+        <div class="flip-card-back">
+            <h1>Avinash Bobba</h1>
+            <p>Engineer</p>
+        </div>
+    </div>
+</div>
+<button @onclick="NavigateToArchive" class="btn btn-primary"> Year Celbs</button>
